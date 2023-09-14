@@ -1,0 +1,1 @@
+print('May god lead you to truth')
