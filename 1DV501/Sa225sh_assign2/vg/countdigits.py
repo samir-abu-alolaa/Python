@@ -1,3 +1,4 @@
+# increment the variable_counter by one if condition is satasfiad.
 def counter():
     inp = input("Enter a large positive integer: ")
     odd, even, zero = 0, 0, 0
