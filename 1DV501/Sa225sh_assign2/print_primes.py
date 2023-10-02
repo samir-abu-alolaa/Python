@@ -1,4 +1,3 @@
-import time
 
 
 def is_prime(tal):
@@ -12,7 +11,6 @@ def is_prime(tal):
 
 def print_primes():
     n = int(input("How many primes? "))
-    start_time = time.time()
     antal = 0
     ans = ""
     x = 2  # Start checking from 2
@@ -25,7 +23,6 @@ def print_primes():
                 ans += "\n"
         x += 1  # Move to the next number
     print(ans)
-    print(time.time() - start_time)
 
 
 print_primes()

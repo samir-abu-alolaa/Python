@@ -1,5 +1,6 @@
 import random
 
+
 def create_random():
     seq = []
     i = 0
@@ -8,6 +9,7 @@ def create_random():
         n = random.randint(1, 10)
         seq.append(n)
     return count_occurrences(seq)
+
 
 def count_occurrences(seq):
     seq = sorted(seq)
@@ -18,6 +20,7 @@ def count_occurrences(seq):
         else:
             ans[key] += 1
     for key, value in ans.items():  
-        print(key,"  ", value)
+        print(key, "  ", value)
+
 
 create_random()

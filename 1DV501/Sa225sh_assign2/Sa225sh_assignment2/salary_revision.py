@@ -1,5 +1,4 @@
-def revision():
-    salaries = user_input()
+def revision(salaries):
     if not salaries:
         print("No valid salaries entered.")
         return
@@ -30,16 +29,14 @@ def user_input():
     salary_str = input("Enter salaries separated by white spaces\
 (press enter when done): ")
 
-    # Split the input string into individual salaries
     salary_list = salary_str.split()
-    # Convert each salary string to an integer and add it to the salaries list
     for salary in salary_list:
         try:
             salary = int(salary)
             salaries.append(salary)
         except ValueError:
             print(f"Invalid input: '{salary}' is not a valid salary.")
-    return salaries
+    return revision(salaries)
 
 
-revision()
+user_input()
